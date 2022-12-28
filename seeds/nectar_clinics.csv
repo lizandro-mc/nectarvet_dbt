@@ -1,0 +1,3 @@
+clinic_id,code,name,migration_description,updated_at
+1,vtech,vtech,data migrated from mysql dump file,12/26/2022
+2,aah,allied animal healtcare,data migrated from csv file uploaded in google drive,12/26/2022

@@ -1,0 +1,38 @@
+
+version: 2
+
+sources:
+
+- name: allied
+  schema: allied_animal_healthcare
+  tables:
+  - name: treatments
+    identifier: aah_gs_ServiceHistories
+  - name: codes
+    identifier: aah_gs_Codes
+  - name: categories
+    identifier: aah_gs_CodesCategories
+  - name: transactions
+    identifier: aah_gs_Transactions
+  - name: prescriptions
+    identifier: aah_gs_Prescriptions
+
+- name: dbt
+  schema: nectarvet_dbt
+  tables: 
+  - name: treatments_map
+    identifier: nectar_treatment_categories_subcategories
+
+- name: vtech
+  schema: server
+  tables:
+  - name: treatments
+    identifier: vtech_service
+
+- name: nectarvet
+  schema: clinic1
+  tables:
+  - name: treatments
+    identifier: clinic1_treatments
+
+
